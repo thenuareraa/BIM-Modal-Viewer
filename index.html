@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>BIM 3D Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body { margin: 0; background: #f0f0f0; }
+      model-viewer {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
   <body>
-    <h1>It Works!</h1>
-    <p>If you see this text, GitHub Pages is live.</p>
+    <model-viewer src="https://raw.githubusercontent.com/thenuareraa/BIM-Modal-Viewer/main/GF%20glb.glb"
+                  alt="BIM Floor Model"
+                  auto-rotate
+                  camera-controls
+                  background-color="#ffffff"
+                  shadow-intensity="1"
+                  exposure="1.2"
+                  ar
+                  ar-modes="webxr scene-viewer quick-look">
+    </model-viewer>
   </body>
 </html>
