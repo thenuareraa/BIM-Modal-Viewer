@@ -22,7 +22,7 @@
       scene.add(directionalLight);
 
       const loader = new GLTFLoader();
-      loader.load('GF%20glb.glb', function (gltf) {
+      loader.load('model.glb', function (gltf) {
         scene.add(gltf.scene);
         camera.position.set(2, 2, 5);
         animate();
